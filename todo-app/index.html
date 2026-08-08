@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todo-container">
+        <header>
+            <h1>Tasks</h1>
+        </header>
+        
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="What needs to be done?" autocomplete="off" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <ul id="todo-list"></ul>
+
+        <footer class="todo-footer">
+            <span id="todo-count">0 items left</span>
+            <div class="filters">
+                <a href="#/" class="filter-btn active" data-filter="all">All</a>
+                <a href="#/active" class="filter-btn" data-filter="active">Active</a>
+                <a href="#/completed" class="filter-btn" data-filter="completed">Completed</a>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
